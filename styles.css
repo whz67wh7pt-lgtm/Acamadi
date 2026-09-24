@@ -1185,3 +1185,47 @@ h2 {
   }
 
 }
+/* ACAMADI LOGO - FORCED SIZING */
+
+.site-header .brand {
+  width: 190px;
+  flex: 0 0 190px;
+}
+
+.site-header .brand-logo {
+  display: block;
+  width: 190px !important;
+  max-width: 190px !important;
+  height: auto !important;
+  max-height: 68px !important;
+  object-fit: contain;
+}
+
+.footer-brand {
+  width: 200px;
+}
+
+.footer-logo {
+  display: block;
+  width: 200px !important;
+  max-width: 200px !important;
+  height: auto !important;
+}
+
+@media (max-width: 720px) {
+  .site-header .brand {
+    width: 155px;
+    flex-basis: 155px;
+  }
+
+  .site-header .brand-logo {
+    width: 155px !important;
+    max-width: 155px !important;
+    max-height: 58px !important;
+  }
+
+  .footer-logo {
+    width: 175px !important;
+    max-width: 175px !important;
+  }
+}
