@@ -5107,3 +5107,336 @@ body .technology-info-grid p {
 .services .service-card:hover a span {
   color: var(--sand-light) !important;
 }
+
+/* =========================================================
+   DASH CAM CATALOG
+   ========================================================= */
+
+.camera-catalog-hero .service-page-hero-content {
+  max-width: 900px;
+}
+
+.camera-info-strip {
+  padding: 42px 0;
+  background: var(--navy);
+  color: #fff;
+}
+
+.camera-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.camera-info-grid > div {
+  padding: 0 32px;
+  border-right: 1px solid rgba(255,255,255,.12);
+}
+
+.camera-info-grid > div:first-child {
+  padding-left: 0;
+}
+
+.camera-info-grid > div:last-child {
+  border-right: 0;
+}
+
+.camera-info-grid span {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--sand-light);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+.camera-info-grid strong {
+  display: block;
+  margin-bottom: 7px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+
+.camera-info-grid p {
+  margin: 0;
+  color: rgba(255,255,255,.62);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.camera-catalog {
+  padding-top: 62px !important;
+  padding-bottom: 62px !important;
+}
+
+#camera-range {
+  scroll-margin-top: 105px;
+}
+
+.camera-tabs {
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 34px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--cream);
+}
+
+.camera-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 45px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.camera-tab span {
+  font-size: 10px;
+  font-weight: 700;
+  opacity: .72;
+}
+
+.camera-tab.active {
+  background: var(--navy);
+  color: #fff;
+}
+
+.camera-panel-heading {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.camera-panel-heading h3 {
+  margin: 0;
+  font-size: clamp(27px, 3vw, 38px);
+}
+
+.camera-panel-heading > p {
+  max-width: 360px;
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.camera-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.camera-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 245px;
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--ink);
+  transition:
+    transform .22s ease,
+    background .22s ease,
+    color .22s ease,
+    border-color .22s ease,
+    box-shadow .22s ease;
+}
+
+.camera-card:hover {
+  transform: translateY(-4px);
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+  box-shadow: var(--shadow);
+}
+
+.camera-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.camera-brand {
+  color: #9a7746;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.camera-type {
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.camera-card h3 {
+  margin: 0 0 13px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.camera-price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.camera-price strong {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  line-height: 1;
+  letter-spacing: -.04em;
+}
+
+.camera-price span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.camera-card > a {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.camera-card > a span {
+  margin-left: 5px;
+  color: #9a7746;
+}
+
+.camera-card:hover .camera-type,
+.camera-card:hover .camera-price span {
+  color: rgba(255,255,255,.68);
+}
+
+.camera-card:hover .camera-type,
+.camera-card:hover > a {
+  border-color: rgba(255,255,255,.15);
+}
+
+.camera-card:hover .camera-brand,
+.camera-card:hover > a span {
+  color: var(--sand-light);
+}
+
+.camera-catalog-note {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.camera-catalog-note p {
+  max-width: 820px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.camera-app-band {
+  padding: 54px 0;
+  background: var(--cream);
+}
+
+.camera-app-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.camera-app-grid h2 {
+  margin: 0;
+}
+
+.camera-app-grid > div:last-child p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+@media (max-width: 920px) {
+  .camera-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .camera-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .camera-info-grid > div,
+  .camera-info-grid > div:first-child {
+    padding: 18px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+  }
+
+  .camera-info-grid > div:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .camera-catalog {
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+
+  .camera-tabs {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .camera-tab {
+    flex: 1;
+    justify-content: center;
+    padding: 0 10px;
+    border-radius: 8px;
+  }
+
+  .camera-tab span {
+    display: none;
+  }
+
+  .camera-panel-heading,
+  .camera-grid,
+  .camera-app-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .camera-panel-heading {
+    gap: 12px;
+  }
+
+  .camera-grid {
+    gap: 12px;
+  }
+
+  .camera-card {
+    min-height: 220px;
+  }
+
+  .camera-app-grid {
+    gap: 20px;
+  }
+}
