@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: Your New Car Protection: Is It Really Worth It?
+title: "Your New Car Protection: Is It Really Worth It?"
 date: 2026-02-01
 category: Ceramic Coatings
 read_time: 7 min read
