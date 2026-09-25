@@ -531,10 +531,14 @@ h2 {
 
   background: #fff;
 
+  color: var(--ink);
+
   transition:
     transform 0.22s ease,
     box-shadow 0.22s ease,
-    border-color 0.22s ease;
+    border-color 0.22s ease,
+    background 0.22s ease,
+    color 0.22s ease;
 }
 
 
@@ -543,16 +547,11 @@ h2 {
 
   box-shadow: var(--shadow);
 
-  border-color: transparent;
-}
+  border-color: var(--navy);
 
-
-.service-card-featured {
   background: var(--navy);
 
   color: #fff;
-
-  border-color: transparent;
 }
 
 
@@ -587,8 +586,13 @@ h2 {
 }
 
 
-.service-card-featured p {
-  color: rgba(255, 255, 255, 0.64);
+.service-card:hover p {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.service-card:hover .service-number,
+.service-card:hover a span {
+  color: var(--sand-light);
 }
 
 
