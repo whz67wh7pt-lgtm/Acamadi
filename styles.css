@@ -5440,3 +5440,40 @@ body .technology-info-grid p {
     gap: 20px;
   }
 }
+
+
+/* DASH CAM CARD IMAGES */
+
+.camera-card-image {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 22px;
+  padding: 14px;
+  overflow: hidden;
+  border-radius: 7px;
+  background: #f7f5f0;
+}
+
+.camera-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform .25s ease;
+}
+
+.camera-card:hover .camera-card-image img {
+  transform: scale(1.035);
+}
+
+.camera-card .camera-card-top {
+  margin-bottom: 22px;
+}
+
+@media (max-width: 720px) {
+  .camera-card-image {
+    aspect-ratio: 16 / 9;
+    padding: 10px;
+  }
+}
