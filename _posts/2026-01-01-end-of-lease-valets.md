@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: End of Lease Valets: Why a Professional Clean Can Save You Money
+title: "End of Lease Valets: Why a Professional Clean Can Save You Money"
 date: 2026-01-01
 category: Valeting
 read_time: 5 min read
