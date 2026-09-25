@@ -16,3 +16,28 @@ if (toggle && nav) {
 }
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+
+/* Dash cam catalogue tabs */
+
+const cameraTabs = document.querySelectorAll('[data-camera-tab]');
+
+if (cameraTabs.length) {
+  cameraTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetId = tab.getAttribute('data-camera-tab');
+
+      cameraTabs.forEach(item => {
+        const isActive = item === tab;
+        item.classList.toggle('active', isActive);
+        item.setAttribute('aria-selected', String(isActive));
+      });
+
+      document.querySelectorAll('.camera-panel').forEach(panel => {
+        const isActive = panel.id === targetId;
+        panel.classList.toggle('active', isActive);
+        panel.hidden = !isActive;
+      });
+    });
+  });
+}
