@@ -5085,3 +5085,25 @@ body .technology-info-grid p {
 .blog-post-content h2 {
   margin-top: 38px;
 }
+
+/* HOMEPAGE SERVICE CARD HOVER - FINAL */
+
+.services .service-card:hover {
+  background: #071724 !important;
+  color: #ffffff !important;
+  border-color: #071724 !important;
+}
+
+.services .service-card:hover h3,
+.services .service-card:hover a {
+  color: #ffffff !important;
+}
+
+.services .service-card:hover p {
+  color: rgba(255, 255, 255, 0.68) !important;
+}
+
+.services .service-card:hover .service-number,
+.services .service-card:hover a span {
+  color: var(--sand-light) !important;
+}
