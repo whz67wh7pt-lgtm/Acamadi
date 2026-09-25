@@ -3098,3 +3098,617 @@ body .valeting-refresh-grid > div:last-child p {
   }
 
 }
+/* =========================================================
+   DASH CAM INSTALLATION PAGE
+   ========================================================= */
+
+
+/* HERO */
+
+.dashcam-hero-bg {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(5, 18, 29, 0.97) 0%,
+      rgba(5, 18, 29, 0.84) 46%,
+      rgba(5, 18, 29, 0.42) 74%,
+      rgba(5, 18, 29, 0.16) 100%
+    ),
+    url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg") !important;
+
+  background-size: cover !important;
+  background-position: center 43% !important;
+}
+
+
+/* INTRO */
+
+body .dashcam-intro {
+  padding-top: 55px !important;
+  padding-bottom: 55px !important;
+
+  background: var(--cream);
+}
+
+
+/* PRICING */
+
+body .dashcam-options {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+
+body #dashcam-options {
+  scroll-margin-top: 105px;
+}
+
+
+body .dashcam-price-grid {
+  display: grid !important;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+  gap: 14px !important;
+}
+
+
+body .dashcam-price-card {
+  display: flex !important;
+  flex-direction: column !important;
+
+  min-height: 450px;
+
+  padding: 30px;
+
+  margin: 0;
+
+  border: 1px solid var(--line);
+
+  border-radius: 8px;
+
+  background: #fff;
+
+  color: var(--ink);
+
+  transition:
+    background 0.22s ease,
+    color 0.22s ease,
+    border-color 0.22s ease,
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+
+body .dashcam-price-card:hover {
+  background: var(--navy);
+
+  color: #fff;
+
+  border-color: var(--navy);
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 45px rgba(5, 20, 32, 0.14);
+}
+
+
+body .dashcam-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 30px;
+}
+
+
+body .dashcam-number {
+  color: #a7804c;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+
+body .dashcam-tag {
+  padding: 6px 10px;
+
+  border: 1px solid var(--line);
+
+  border-radius: 999px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+body .dashcam-price-card h3 {
+  margin: 5px 0 15px;
+
+  font-size: 28px;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+}
+
+
+body .dashcam-price {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+
+body .dashcam-price span {
+  color: var(--muted);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+
+body .dashcam-price strong {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 40px;
+
+  line-height: 1;
+
+  letter-spacing: -0.045em;
+}
+
+
+body .dashcam-description {
+  margin: 0 0 20px !important;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+body .dashcam-price-card ul {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0 0 20px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 8px 20px;
+}
+
+
+body .dashcam-price-card li {
+  position: relative;
+
+  padding-left: 18px;
+
+  color: #46535e;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+body .dashcam-price-card li::before {
+  content: "•";
+
+  position: absolute;
+
+  left: 0;
+
+  color: #a7804c;
+}
+
+
+body .dashcam-price-card > a {
+  margin-top: auto;
+
+  padding-top: 17px;
+
+  border-top: 1px solid var(--line);
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+body .dashcam-price-card > a span {
+  margin-left: 6px;
+
+  color: #a7804c;
+}
+
+
+/* HOVER */
+
+body .dashcam-price-card:hover .dashcam-tag,
+body .dashcam-price-card:hover .dashcam-price span,
+body .dashcam-price-card:hover .dashcam-description,
+body .dashcam-price-card:hover li {
+  color: rgba(255, 255, 255, 0.70);
+}
+
+
+body .dashcam-price-card:hover .dashcam-tag,
+body .dashcam-price-card:hover > a {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+
+body .dashcam-price-card:hover .dashcam-number,
+body .dashcam-price-card:hover .detail-service-kicker,
+body .dashcam-price-card:hover li::before,
+body .dashcam-price-card:hover > a span {
+  color: var(--sand-light);
+}
+
+
+/* PRICE NOTES */
+
+body .dashcam-price-note {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-top: 18px;
+}
+
+
+body .dashcam-price-note p {
+  max-width: 560px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+
+/* HARDWIRE SECTION */
+
+body .dashcam-hardwire {
+  padding-top: 62px !important;
+  padding-bottom: 62px !important;
+
+  background: var(--navy);
+
+  color: #fff;
+}
+
+
+body .dashcam-hardwire-grid {
+  display: grid !important;
+
+  grid-template-columns: 0.9fr 1.1fr !important;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+body .dashcam-hardwire-visual {
+  position: relative;
+
+  min-height: 430px;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 18, 29, 0.03),
+      rgba(5, 18, 29, 0.48)
+    ),
+    url("https://www.acamadi.co.uk/wp-content/uploads/IMG_1178-1024x768.jpeg")
+    center / cover;
+
+  overflow: hidden;
+}
+
+
+body .dashcam-visual-label {
+  position: absolute;
+
+  left: 26px;
+
+  bottom: 26px;
+
+  padding: 20px;
+
+  min-width: 205px;
+
+  background: rgba(7, 23, 36, 0.92);
+
+  backdrop-filter: blur(10px);
+}
+
+
+body .dashcam-visual-label span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--sand-light);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+}
+
+
+body .dashcam-visual-label strong {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1.3;
+}
+
+
+body .dashcam-hardwire-copy h2 {
+  margin-bottom: 20px;
+}
+
+
+body .dashcam-hardwire-copy > p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.68);
+
+  line-height: 1.75;
+}
+
+
+body .dashcam-feature-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  margin-top: 30px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+body .dashcam-feature-list > div {
+  padding: 19px 18px 19px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+body .dashcam-feature-list > div:nth-child(even) {
+  padding-left: 18px;
+
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+body .dashcam-feature-list strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 13px;
+}
+
+
+body .dashcam-feature-list span {
+  color: rgba(255, 255, 255, 0.56);
+
+  font-size: 11px;
+}
+
+
+/* OWN CAMERA / NEED CAMERA */
+
+body .dashcam-choice {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+
+  background: #fff;
+}
+
+
+body .dashcam-choice-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+
+body .dashcam-choice-grid article {
+  padding: 30px;
+
+  border: 1px solid var(--line);
+
+  border-radius: 8px;
+
+  background: var(--cream);
+}
+
+
+body .dashcam-choice-grid article > span {
+  display: block;
+
+  margin-bottom: 35px;
+
+  color: #a7804c;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+
+body .dashcam-choice-grid h3 {
+  margin-bottom: 12px;
+
+  font-size: 23px;
+}
+
+
+body .dashcam-choice-grid p {
+  color: var(--muted);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* PROCESS */
+
+body .dashcam-process {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+
+/* TIME */
+
+body .dashcam-time {
+  padding-top: 55px !important;
+  padding-bottom: 55px !important;
+
+  background: var(--cream);
+}
+
+
+body .dashcam-time-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+}
+
+
+body .dashcam-time-grid > div:last-child p {
+  color: var(--muted);
+
+  line-height: 1.75;
+}
+
+
+/* TABLET */
+
+@media (max-width: 920px) {
+
+  body .dashcam-hardwire-grid {
+    grid-template-columns: 1fr !important;
+
+    gap: 36px;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 720px) {
+
+  body .dashcam-intro,
+  body .dashcam-options,
+  body .dashcam-hardwire,
+  body .dashcam-choice,
+  body .dashcam-process,
+  body .dashcam-time {
+    padding-top: 46px !important;
+    padding-bottom: 46px !important;
+  }
+
+
+  body .dashcam-price-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+
+  body .dashcam-price-card {
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+
+  body .dashcam-price-card ul {
+    grid-template-columns: 1fr;
+  }
+
+
+  body .dashcam-price-note {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+
+  body .dashcam-hardwire-visual {
+    min-height: 350px;
+  }
+
+
+  body .dashcam-feature-list {
+    grid-template-columns: 1fr;
+  }
+
+
+  body .dashcam-feature-list > div:nth-child(even) {
+    padding-left: 0;
+
+    border-left: 0;
+  }
+
+
+  body .dashcam-choice-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  body .dashcam-time-grid {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+}
