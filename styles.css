@@ -2688,3 +2688,21 @@ h2 {
 #ceramic-packages {
   scroll-margin-top: 105px;
 }
+.ceramic-package-card {
+  min-height: 540px;
+  padding: 28px 30px;
+}
+
+.package-topline {
+  margin-bottom: 30px;
+}
+
+.package-description {
+  min-height: 80px;
+  margin-bottom: 20px;
+}
+
+.ceramic-package-card ul {
+  margin-bottom: 18px;
+  gap: 8px;
+}
