@@ -1,0 +1,139 @@
+---
+layout: null
+title: ACAMADI Insights
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Advice from ACAMADI Automotive on detailing, valeting, ceramic coatings, dash cams and vehicle technology.">
+  <title>ACAMADI Insights | ACAMADI Automotive</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="{{ '/index.html' | relative_url }}" aria-label="ACAMADI Automotive home">
+        <img src="{{ '/images/acamadi-logo.png' | relative_url }}" alt="ACAMADI Automotive" class="brand-logo">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="{{ '/index.html#services' | relative_url }}">Services</a>
+        <a href="{{ '/index.html#about' | relative_url }}">About</a>
+        <a href="{{ '/index.html#reviews' | relative_url }}">Reviews</a>
+        <a href="{{ '/blogs.html' | relative_url }}">Insights</a>
+        <a class="nav-cta" href="https://www.acamadi.co.uk/contact/" target="_blank" rel="noopener">Get a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog-hero">
+      <div class="shell blog-hero-inner">
+        <p class="eyebrow">ACAMADI Insights</p>
+        <h1>Useful advice for looking after your car.</h1>
+        <p>Practical guidance on detailing, vehicle care, dash cams and automotive technology.</p>
+      </div>
+    </section>
+
+    <section class="blog-index section">
+      <div class="shell">
+        <div class="blog-index-head">
+          <div>
+            <p class="eyebrow dark">Latest articles</p>
+            <h2>From the ACAMADI blog.</h2>
+          </div>
+          <p>Clear, useful answers to the questions customers ask before booking a service.</p>
+        </div>
+
+        <div class="blog-card-grid">
+          {% for post in site.posts %}
+          <article class="blog-card">
+            <a class="blog-card-image" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">
+              {% if post.image %}
+                <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title | escape }}">
+              {% else %}
+                <div class="blog-card-placeholder"><span>ACAMADI</span></div>
+              {% endif %}
+            </a>
+
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span>{{ post.category }}</span>
+                <span>{{ post.date | date: "%b %Y" }}</span>
+              </div>
+
+              <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+              <p>{{ post.excerpt }}</p>
+
+              <div class="blog-card-footer">
+                <span>{{ post.read_time | default: "5 min read" }}</span>
+                <a href="{{ post.url | relative_url }}">Read article <span>→</span></a>
+              </div>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="service-final-cta">
+      <div class="shell service-final-cta-inner">
+        <div>
+          <p class="eyebrow">Need something specific?</p>
+          <h2>Talk to ACAMADI about your vehicle.</h2>
+          <p>From detailing and valeting to dash cams and vehicle technology, get advice tailored to your car.</p>
+        </div>
+        <div class="service-final-actions">
+          <a class="btn btn-light" href="https://www.acamadi.co.uk/contact/" target="_blank" rel="noopener">Get a free quote</a>
+          <a class="btn btn-service-outline" href="https://wa.me/447930369955" target="_blank" rel="noopener">WhatsApp ACAMADI</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <a class="brand footer-brand" href="{{ '/index.html' | relative_url }}">
+          <img src="{{ '/images/acamadi-logo.png' | relative_url }}" alt="ACAMADI Automotive" class="footer-logo">
+        </a>
+        <p>Mobile detailing, valeting and vehicle accessory installation.</p>
+      </div>
+
+      <div>
+        <h3>Services</h3>
+        <a href="{{ '/detailing.html' | relative_url }}">Detailing</a>
+        <a href="{{ '/ceramic-coatings.html' | relative_url }}">Ceramic coatings</a>
+        <a href="{{ '/valeting.html' | relative_url }}">Valeting</a>
+        <a href="{{ '/dash-cam-installation.html' | relative_url }}">Dash cam fitting</a>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <a href="{{ '/blogs.html' | relative_url }}">Insights</a>
+        <a href="tel:+447930369955">07930 369955</a>
+        <a href="https://www.acamadi.co.uk/contact/" target="_blank" rel="noopener">Contact</a>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <span>© <span id="year"></span> ACAMADI Automotive</span>
+      <span>Driven by perfection</span>
+    </div>
+  </footer>
+
+  <script src="{{ '/script.js' | relative_url }}"></script>
+</body>
+</html>
