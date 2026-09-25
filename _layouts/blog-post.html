@@ -49,9 +49,12 @@
         </div>
       </header>
 
-      {% if page.image %}
+      {% if page.image and page.image != "" %}
       <div class="shell blog-post-featured-image">
-        <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
+        <img
+          src="{{ page.image | relative_url }}"
+          alt="{{ page.image_alt | default: page.title | escape }}"
+        >
       </div>
       {% endif %}
 
