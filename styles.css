@@ -5039,7 +5039,7 @@ body .technology-info-grid p {
 }
 
 .blog-post-header-inner {
-  max-width: 880px;
+  max-width: none;
 }
 
 .blog-post-header h1 {
